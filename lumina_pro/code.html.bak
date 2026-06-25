@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumina Pro - Premium Subscription</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=DM+Sans:wght@400;500;700&amp;family=IBM+Plex+Arabic:wght@400;500;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#30312e",
+                    "tertiary-container": "#737288",
+                    "outline": "#777587",
+                    "on-primary-container": "#fffbff",
+                    "tertiary-fixed-dim": "#c6c4dc",
+                    "outline-variant": "#c7c4d8",
+                    "secondary-fixed": "#ffdad8",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#ffb3b0",
+                    "on-error": "#ffffff",
+                    "primary-container": "#675df9",
+                    "secondary-container": "#ff6b6b",
+                    "on-tertiary-container": "#fffbff",
+                    "error": "#ba1a1a",
+                    "tertiary": "#5b5a6f",
+                    "primary": "#4d41df",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#e2e0f9",
+                    "surface-container": "#efeeea",
+                    "surface-variant": "#e4e2de",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#464555",
+                    "surface-bright": "#fbf9f5",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#454559",
+                    "primary-fixed-dim": "#c4c0ff",
+                    "inverse-on-surface": "#f2f0ec",
+                    "on-background": "#1b1c1a",
+                    "surface-container-low": "#f5f3ef",
+                    "surface-container-high": "#eae8e4",
+                    "on-tertiary-fixed": "#1a1a2c",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#100069",
+                    "primary-fixed": "#e3dfff",
+                    "on-secondary-fixed-variant": "#8c1520",
+                    "background": "#fbf9f5",
+                    "surface-container-highest": "#e4e2de",
+                    "surface-tint": "#4f44e2",
+                    "on-primary-fixed-variant": "#3622ca",
+                    "on-surface": "#1b1c1a",
+                    "on-secondary-fixed": "#410006",
+                    "on-secondary-container": "#6d0010",
+                    "error-container": "#ffdad6",
+                    "surface": "#fbf9f5",
+                    "secondary": "#ae2f34",
+                    "surface-dim": "#dbdad6",
+                    "inverse-primary": "#c4c0ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "md": "16px",
+                    "gutter": "20px",
+                    "lg": "24px",
+                    "container-max": "1200px",
+                    "xl": "40px",
+                    "xs": "4px",
+                    "sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Sora"],
+                    "label-mono": ["JetBrains Mono"],
+                    "body-md": ["DM Sans"],
+                    "body-sm": ["DM Sans"],
+                    "arabic-body": ["IBM Plex Arabic"],
+                    "headline-lg-mobile": ["Sora"],
+                    "display-lg": ["Sora"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-mono": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "arabic-body": ["17px", {"lineHeight": "1.7", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+    </style>
+    </style>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4d41df">
+    <script type="module" src="/scripts/client-api.js" defer></script>
+</head>
+            background-color: #fbf9f5;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(108, 99, 255, 0.12);
+            box-shadow: 0 8px 30px rgba(28, 28, 46, 0.04);
+        }
+        .premium-glow {
+            box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+            animation: pulse-glow 3s infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="text-on-surface selection:bg-primary/20">
+<!-- Suppress Shell for Transactional Focus -->
+<main class="min-h-screen relative overflow-hidden flex flex-col items-center">
+<!-- Background Animation -->
+
+<div class="max-w-[1200px] w-full px-gutter py-xl flex flex-col items-center gap-xl relative z-10">
+<!-- Hero Section -->
+<header class="text-center flex flex-col items-center gap-md">
+<div class="premium-glow bg-primary text-white w-14 h-14 rounded-full flex items-center justify-center mb-md">
+<span class="text-headline-lg font-headline-lg">✦</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary max-w-2xl leading-tight">
+                    ارتقِ بتجربتك إلى Lumina Pro
+                </h1>
+<p class="font-arabic-body text-arabic-body text-on-surface-variant max-w-xl">
+                    انضم إلى مجتمعنا المميز واستمتع بمجموعة حصرية من الميزات المصممة لتعزيز إبداعك وتواصلك.
+                </p>
+</header>
+<!-- Pricing Section -->
+<div class="w-full flex flex-col items-center gap-lg">
+<!-- Toggle Switch -->
+<div class="bg-surface-container-high p-1 rounded-full flex gap-1">
+<button class="px-lg py-sm rounded-full font-arabic-body text-body-sm transition-all duration-300 bg-surface text-on-surface shadow-sm" id="monthlyToggle">
+                        شهرياً
+                    </button>
+<button class="px-lg py-sm rounded-full font-arabic-body text-body-sm transition-all duration-300 text-on-surface-variant hover:text-on-surface" id="yearlyToggle">
+                        سنوياً
+                    </button>
+</div>
+<!-- Plan Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg w-full max-w-4xl">
+<!-- Monthly Card -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-md border-2 border-transparent transition-all duration-300 hover:border-primary/20 active:scale-[0.98]" id="monthlyCard">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile text-on-surface">الباقة الشهرية</h3>
+<p class="font-arabic-body text-body-sm text-on-surface-variant">مرونة كاملة كل شهر</p>
+</div>
+</div>
+<div class="flex items-baseline gap-xs">
+<span class="font-headline-lg text-headline-lg text-primary">$4.99</span>
+<span class="font-arabic-body text-body-sm text-on-surface-variant">/ شهر</span>
+</div>
+</div>
+<!-- Yearly Card (Featured) -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-md relative overflow-hidden ring-2 ring-primary transition-all duration-300 hover:shadow-xl active:scale-[0.98]" id="yearlyCard">
+<div class="absolute top-4 left-4 bg-secondary text-on-secondary px-sm py-xs rounded-full font-label-mono text-label-mono uppercase tracking-widest">
+                            Save 33%
+                        </div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile text-on-surface">الباقة السنوية</h3>
+<p class="font-arabic-body text-body-sm text-on-surface-variant">أفضل قيمة للمبدعين</p>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-xs">
+<span class="font-headline-lg text-headline-lg text-primary">$39.99</span>
+<span class="font-arabic-body text-body-sm text-on-surface-variant">/ سنة</span>
+</div>
+<span class="text-secondary font-arabic-body text-body-sm font-medium">ما يعادل $3.33 شهرياً</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Features Bento Grid -->
+<div class="w-full max-w-4xl">
+<h4 class="font-headline-lg text-headline-lg-mobile text-on-surface mb-lg text-center">لماذا تختار Lumina Pro؟</h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Feature Item -->
+<div class="glass-card p-md rounded-xl flex items-start gap-md">
+<div class="bg-primary/10 text-primary p-sm rounded-lg">
+<span class="material-symbols-outlined">block</span>
+</div>
+<div>
+<p class="font-arabic-body text-body-md font-bold text-on-surface">خالية من الإعلانات</p>
+<p class="font-arabic-body text-body-sm text-on-surface-variant">تجربة نقية 100% دون أي مقاطعات.</p>
+</div>
+</div>
+<!-- Feature Item -->
+<div class="glass-card p-md rounded-xl flex items-start gap-md">
+<div class="bg-primary/10 text-primary p-sm rounded-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<p class="font-arabic-body text-body-md font-bold text-on-surface">شارة ✦ متميزة</p>
+<p class="font-arabic-body text-body-sm text-on-surface-variant">تميز بملفك الشخصي بين الجميع.</p>
+</div>
+</div>
+<!-- Feature Item -->
+<div class="glass-card p-md rounded-xl flex items-start gap-md">
+<div class="bg-primary/10 text-primary p-sm rounded-lg">
+<span class="material-symbols-outlined">cloud</span>
+</div>
+<div>
+<p class="font-arabic-body text-body-md font-bold text-on-surface">تخزين سحابي</p>
+<p class="font-arabic-body text-body-sm text-on-surface-variant">50 غيغابايت لجميع ملفاتك وإبداعاتك.</p>
+</div>
+</div>
+<!-- Feature Item -->
+<div class="glass-card p-md rounded-xl flex items-start gap-md">
+<div class="bg-primary/10 text-primary p-sm rounded-lg">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<p class="font-arabic-body text-body-md font-bold text-on-surface">إحصائيات متقدمة</p>
+<p class="font-arabic-body text-body-sm text-on-surface-variant">أدوات تحليلية عميقة لنمو حسابك.</p>
+</div>
+</div>
+<!-- Feature Item -->
+<div class="glass-card p-md rounded-xl flex items-start gap-md">
+<div class="bg-primary/10 text-primary p-sm rounded-lg">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div>
+<p class="font-arabic-body text-body-md font-bold text-on-surface">وصول مبكر</p>
+<p class="font-arabic-body text-body-sm text-on-surface-variant">كن أول من يجرب الميزات التجريبية.</p>
+</div>
+</div>
+<!-- Feature Item -->
+<div class="glass-card p-md rounded-xl flex items-start gap-md">
+<div class="bg-primary/10 text-primary p-sm rounded-lg">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div>
+<p class="font-arabic-body text-body-md font-bold text-on-surface">دعم بشري مباشر</p>
+<p class="font-arabic-body text-body-sm text-on-surface-variant">فريقنا معك دائماً لحل أي استفسار.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Separation & Context Image -->
+<div class="w-full max-w-4xl h-48 rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A serene and premium lifestyle photography scene featuring a clean, minimalist workspace. Soft morning light filters through a large window, illuminating a sleek aluminum laptop and a digital tablet on a light wood desk. The atmosphere is quiet, luxurious, and highly focused, using a palette of soft creams, lavender tints, and deep navy accents to convey the Lumina Pro brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARoQFQGxIDzkQnLruC_BQ9f9rx7b1X__edfuDe_5smrmxWtkNi4DETRQV0s5nv5wCqS5HaYCQBoV3P0fjuJONY5OwRU2nyADyZ46oXYneHlRjvatGh04oOkJrow4Ds8W-0bHtv07wlGRuVKL-eZEFRtQny5lBWsnr2im2xRYbcKX91-jyv_FvbMf2FxCJg-O4k1QI7arc2JlkF7Jimhtzk8Ocljcz5exqjSS6_DWiry1wO9utoeqFmyg"/>
+<div class="absolute bottom-md right-md z-20 text-white">
+<p class="font-headline-lg text-headline-lg-mobile">ابدأ رحلتك الإبداعية اليوم</p>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="flex flex-col items-center gap-md w-full">
+<button id="subscribeBtn" class="w-full max-w-md bg-primary text-on-primary font-arabic-body text-body-md font-bold py-lg rounded-xl shadow-lg hover:bg-primary-container active:scale-95 transition-all duration-200">
+                    اشترك الآن
+                </button>
+<a class="font-arabic-body text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+                    ربما لاحقاً
+                </a>
+</div>
+<!-- Trust Badges -->
+<div class="flex gap-lg items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+<span class="material-symbols-outlined text-[32px]">security</span>
+<span class="material-symbols-outlined text-[32px]">credit_card</span>
+<span class="material-symbols-outlined text-[32px]">verified_user</span>
+</div>
+</div>
+<!-- Decorative Blurs -->
+<div class="absolute top-[-10%] right-[-5%] w-96 h-96 bg-primary/10 rounded-full blur-[120px] -z-10"></div>
+<div class="absolute bottom-[5%] left-[-10%] w-[30rem] h-[30rem] bg-secondary-container/10 rounded-full blur-[150px] -z-10"></div>
+</main>
+<script>
+        const monthlyToggle = document.getElementById('monthlyToggle');
+        const yearlyToggle = document.getElementById('yearlyToggle');
+        const monthlyCard = document.getElementById('monthlyCard');
+        const yearlyCard = document.getElementById('yearlyCard');
+
+        function setActive(plan) {
+            if (plan === 'monthly') {
+                monthlyToggle.classList.add('bg-surface', 'text-on-surface', 'shadow-sm');
+                monthlyToggle.classList.remove('text-on-surface-variant');
+                yearlyToggle.classList.remove('bg-surface', 'text-on-surface', 'shadow-sm');
+                yearlyToggle.classList.add('text-on-surface-variant');
+                
+                monthlyCard.classList.add('ring-2', 'ring-primary');
+                yearlyCard.classList.remove('ring-2', 'ring-primary');
+            } else {
+                yearlyToggle.classList.add('bg-surface', 'text-on-surface', 'shadow-sm');
+                yearlyToggle.classList.remove('text-on-surface-variant');
+                monthlyToggle.classList.remove('bg-surface', 'text-on-surface', 'shadow-sm');
+                monthlyToggle.classList.add('text-on-surface-variant');
+
+                yearlyCard.classList.add('ring-2', 'ring-primary');
+                monthlyCard.classList.remove('ring-2', 'ring-primary');
+            }
+        }
+
+        monthlyToggle.addEventListener('click', () => setActive('monthly'));
+        yearlyToggle.addEventListener('click', () => setActive('yearly'));
+
+        // Intersection Observer for reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+                document.querySelectorAll('.glass-card').forEach(card => {
+                        card.classList.add('opacity-0', 'translate-y-10');
+                        observer.observe(card);
+                });
+</script>
+<script type="module">
+import { subscribe } from '/scripts/client-api.js';
+
+window.currentPlan = 'monthly';
+document.getElementById('monthlyToggle')?.addEventListener('click', () => window.currentPlan = 'monthly');
+document.getElementById('yearlyToggle')?.addEventListener('click', () => window.currentPlan = 'yearly');
+
+document.getElementById('subscribeBtn')?.addEventListener('click', async () => {
+    const email = prompt('أدخل بريدك الإلكتروني للاشتراك:');
+    if (!email) return alert('تم إلغاء العملية');
+    try {
+        const res = await subscribe(email, window.currentPlan || 'monthly');
+        if (res.ok) alert('تم الاشتراك بنجاح!');
+        else alert('خطأ: ' + (res.error || JSON.stringify(res)));
+    } catch (err) {
+        console.error(err);
+        alert('فشل الاتصال بالخادم');
+    }
+});
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(console.error);
+    });
+}
+</script>
+</body></html>
